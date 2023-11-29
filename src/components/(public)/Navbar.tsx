@@ -1,8 +1,11 @@
+"use client";
+
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { NAV_LINKS } from "../constants";
-import Button from "./Button";
+import { NAV_LINKS } from "../../constants";
+import Button from "../buttons/Button";
+import Login from "./LoginButton";
 
 const Navbar = () => {
   return (
@@ -16,13 +19,16 @@ const Navbar = () => {
               width={70}
               height={100}
               loading="lazy"
+              style={{width: "auto", height: "auto"}}
             />
-            <h1 className="font-extrabold text-transparent ml-3 uppercase text-2xl bg-clip-text bg-gradient-to-r from-gray-800 via-gray-400 to-gray-800">Inspectron</h1>
+            <h1 className="font-extrabold text-transparent ml-3 uppercase text-2xl bg-clip-text bg-gradient-to-r from-gray-800 via-gray-400 to-gray-800">
+              Inspectron
+            </h1>
           </div>
         </Link>
-        <ul className="hidden h-full gap-12 lg:flex">
+        <ul className="hidden h-full gap-5 lg:flex">
           {NAV_LINKS.map((each) => (
-            <>
+            <li key={each.key}>
               <Link
                 href={each.href}
                 key={each.key}
@@ -30,7 +36,7 @@ const Navbar = () => {
               >
                 {each.name}
               </Link>
-            </>
+            </li>
           ))}
         </ul>
         <div className="lg:flexCenter hidden">
@@ -42,14 +48,7 @@ const Navbar = () => {
               variant="btn_dark_green"
             ></Button>
           </Link>
-          <Link href="/login">
-            <Button
-              type="button"
-              txt="Login"
-              icon="/login.svg"
-              variant="btn_dark_green ml-3"
-            ></Button>
-          </Link>
+          <Login />
         </div>
         <Image
           src="/menu.svg"

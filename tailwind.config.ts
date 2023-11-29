@@ -9,11 +9,26 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        buttons: {
+          submit: {
+            bg: "#25254f",
+            text: "white",
+            hover: "#47436b"
+          },
+          navbar: {
+            bg: "",
+            text: "white"
+          }
+        },
+
         green: {
           50: '#30AF5B',
           90: '#292C27',
         },
         gray: {
+          primary: "#585858",
+          secondary: "#626262",
+          tertiary: "#9f9f9f",
           10: '#EEEEEE',
           20: '#A2A2A2',
           30: '#7B7B7B',
@@ -21,6 +36,8 @@ const config: Config = {
           90: '#141414',
         },
         orange: {
+          primary: "#ff7f7f",
+          secondary: "#ffd5d5",
           50: '#FF814C',
         },
         blue: {

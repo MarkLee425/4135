@@ -1,8 +1,8 @@
 import React from "react";
 import Link from "next/link";
-import Button from "../components/Button";
+import Button from "../../components/buttons/Button";
 
-import { HOME_PAGE_HEADER, HOME_PAGE_DESCRIPTION } from "../constants";
+import { HOME_PAGE_HEADER, HOME_PAGE_DESCRIPTION } from "../../constants";
 
 export default function Home() {
   return (
