@@ -38,10 +38,21 @@ const config: Config = {
         orange: {
           primary: "#ff7f7f",
           secondary: "#ffd5d5",
+          tertiary: "#FEEDED",
           50: '#FF814C',
         },
         blue: {
+          primary: "#7F65FE",
+          secondary: "#A998FE", 
+          tertiary: "#E1DCFD",
+          quarternary: "#F2EEFE",
           70: '#021639',
+        },
+        paleBlue: {
+          primary: "#01CCFE",
+          secondary: "#5FDFFE",
+          tertiary: "#B4EFFE",
+          quarternary: "#E6F9FE"
         },
         yellow: {
           50: '#FEC601',

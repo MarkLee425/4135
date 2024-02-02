@@ -8,12 +8,11 @@ import type { Metadata } from "next";
 import Sidebar from "@/components/(admin)/sidebar/Sidebar";
 import Navbar from "@/components/(admin)/Navbar";
 import Footer from "@/components/Footer";
-
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Inspectron",
-  description: "Get started in Inspectron",
+  description: "Get started in Inspectron"
 };
 
 export default async function AccessLayout({
@@ -39,7 +38,7 @@ export default async function AccessLayout({
         <div className="flex">
           <Sidebar />
           <Navbar />
-          <div className="mt-28">
+          <div className="mt-28 ml-12">
             {children}
           </div>
           <Footer />

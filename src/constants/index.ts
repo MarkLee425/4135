@@ -9,7 +9,10 @@ export const HOME_PAGE_HEADER = "The Inspection Smart Robot";
 export const HOME_PAGE_DESCRIPTION =
   "Inspectron is a leading provider of smart robot solutions for the inspection industry with edge-cutting technology.";
 
-export const FOOTER = "@2023 Inspectron, Inc.";
+export const FOOTER_BEGIN = "@2023 Inspectron, Inc.";
+export const FOOTER_MIDDLE = "Designed By";
+export const FOOTER_TERMS_CONDITION = "Terms & Conditions";
+export const FOOTER_POLICY = "Privacy Policy";
 
 export const ABOUT_PAGE_HEADER = "At Inspectron, we offer cutting-edge patrol robotics. Trusted by millions of customers."
 
